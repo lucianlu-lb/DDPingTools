@@ -94,7 +94,7 @@ struct DDPingItem {
         NotificationCenter.default.removeObserver(self)
     }
 
-    public init(hostName: String? = nil) {
+    @objc public init(hostName: String? = nil) {
         var host = hostName ?? "www.apple.com"
         if host.isEmpty {
             host = "www.apple.com"
