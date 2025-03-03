@@ -53,7 +53,7 @@ struct DDPingItem {
     var sequence: UInt16 = 0
 }
 
-@objcMembers class DDPingTools: NSObject {
+@objcMembers open class DDPingTools: NSObject {
     public var timeout: DDPingTimeInterval = .millisecond(1000)  //自定义超时时间，默认1000毫秒，设置为0则一直等待
     public var debugLog = true                                  //是否开启日志输出
     public var stopWhenError = false                            //遇到错误停止ping
